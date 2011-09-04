@@ -11,11 +11,6 @@ module Harvest
   
 end
 
-# Gems
-require "rubygems"
-require "activeresource"
-require "active_resource_throttle"
-
 # Plugins
 PluginPath = File.join(File.dirname(__FILE__), "harvest", "plugins")
 Harvest.load_all_ruby_files_from_path(PluginPath)
